@@ -16,7 +16,6 @@ Requires: gdb-gdbserver
 Requires: vim-enhanced
 Requires: less
 Requires: valgrind
-Requires: lipstick-qt5-tools
 Requires: libhybris-tests
 Requires: busybox-static
 Requires: openssh-server
@@ -41,21 +40,11 @@ Requires: geoclue-provider-mlsdb
 
 # Introduced starting Sailfish OS 2.1.1.26
 # Required for Jolla Store Access
-Requires: patterns-sailfish-consumer-generic
+#Requires: patterns-sailfish-consumer-generic
 
 # Devices with 2G or more memory should also include this booster
 # to improve camera startup times and the like
 Requires: mapplauncherd-booster-silica-qt5-media
-
-# some apps useful
-Requires: sailfish-office
-Requires: jolla-calculator
-Requires: jolla-email
-Requires: jolla-notes
-Requires: jolla-clock
-Requires: jolla-mediaplayer
-Requires: jolla-calendar
-Requires: sailfish-weather
 
 %description -n patterns-sailfish-device-configuration-vince
 Pattern with packages for vince configurations

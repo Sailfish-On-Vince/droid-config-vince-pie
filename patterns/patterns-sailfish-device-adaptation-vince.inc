@@ -34,7 +34,7 @@ Requires: qt5-feedback-haptics-native-vibrator
 # Needed for /dev/touchscreen symlink
 Requires: qt5-plugin-generic-evdev
 
-Requires: pulseaudio-modules-droid
+Requires: pulseaudio-modules-droid-jb2q
 Requires: pulseaudio-modules-droid-hidl
 Requires: audiosystem-passthrough-dummy-af
 
@@ -68,10 +68,11 @@ Requires: usb-moded-connection-sharing-android-config
 #Requires: usb-moded-diag-mode-android
 
 # hammerhead, grouper, and maguro use this in scripts, so include for all
-Requires: rfkill
+#Requires: rfkill
 
 # enable device lock and allow to select untrusted software
 Requires: jolla-devicelock-daemon-encsfa
+#Requires: sailfish-devicelock-fpd
 
 # For GPS
 Requires: geoclue-provider-hybris
@@ -82,9 +83,6 @@ Requires: jolla-mediaplayer-radio
 
 # For torch
 Requires: jolla-settings-system-flashlight
-
-# Additional packages
-Requires: sd-utils
 
 # For suspend to work with enabled Wi-Fi on newer Qualcomm devices
 Requires: sailfish-connman-plugin-suspend

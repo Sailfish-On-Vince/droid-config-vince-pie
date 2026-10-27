@@ -10,7 +10,7 @@
 %define pixel_ratio 1.5
 # We assume most devices will
 %define have_modem 1
-%define android_version_major 11
+%define android_version_major 9
 
 # Device-specific usb-moded configuration
 Provides: usb-moded-configs
@@ -20,9 +20,13 @@ Provides: ofono-configs
 Obsoletes: ofono-configs-mer
 
 Obsoletes: qt5-qpa-surfaceflinger-plugin
+#Obsoletes: jolla-devicelock-daemon-encpartition
+#Obsoletes: jolla-devicelock-plugin-encpartition
 
 # Community HW adaptations need this
 %define community_adaptation 1
+
+Requires: libgbinder-tools
 
 # For bluez5
 %define ofono_enable_plugins bluez5,hfp_ag_bluez5
