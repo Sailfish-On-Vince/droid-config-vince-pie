@@ -90,6 +90,11 @@ Requires: sailfish-connman-plugin-suspend
 # For data
 Requires: dummy_netd
 
+# For FP
+Requires: sailfish-fpd-community
+Requires: sailfish-devicelock-fpd
+Requires: droid-biometry-fp
+
 %description -n patterns-sailfish-device-adaptation-vince
 Pattern with packages for vince HW Adaptation
 
