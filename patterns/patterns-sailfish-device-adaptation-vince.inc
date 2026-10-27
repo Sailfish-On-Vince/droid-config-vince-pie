@@ -3,14 +3,16 @@ Summary: Jolla HW Adaptation vince
 Requires: droid-hal-vince
 Requires: droid-hal-vince-img-boot
 Requires: droid-hal-vince-kernel-modules
+Requires: droid-hal-vince-tools
+
 Requires: droid-config-vince-sailfish
 Requires: droid-config-vince-pulseaudio-settings
 Requires: droid-config-vince-policy-settings
 Requires: droid-config-vince-preinit-plugin
 Requires: droid-config-vince-flashing
 Requires: droid-config-vince-bluez5
+
 Requires: droid-hal-version-vince
-Requires: droid-hal-vince-detritus
 
 
 # Hybris packages
@@ -25,7 +27,7 @@ Requires: bluebinder
 Requires: ofono-ril-binder-plugin
 
 # Sensors
-Requires: hybris-libsensorfw-qt5-binder
+Requires: hybris-libsensorfw-qt5
 
 # Vibra
 Requires: ngfd-plugin-native-vibrator
@@ -56,23 +58,11 @@ Requires: mce-plugin-libhybris
 ## USB mode controller
 # Enables mode selector upon plugging USB cable:
 Requires: usb-moded
-Requires: usb-moded-defaults-android
-Requires: usb-moded-developer-mode-android
-
-# Extra useful modes not officially supported:
-# might need some configuration to get working
-#Requires: usb-moded-mass-storage-android-config
-# working but careful with roaming!
-Requires: usb-moded-connection-sharing-android-config
-# android diag mode only usable for certain android tools
-#Requires: usb-moded-diag-mode-android
-
 # hammerhead, grouper, and maguro use this in scripts, so include for all
-#Requires: rfkill
+Requires: rfkill
 
 # enable device lock and allow to select untrusted software
-Requires: jolla-devicelock-daemon-encsfa
-#Requires: sailfish-devicelock-fpd
+#Requires: jolla-devicelock-daemon-encsfa
 
 # For GPS
 Requires: geoclue-provider-hybris
