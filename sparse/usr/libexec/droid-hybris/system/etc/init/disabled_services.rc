@@ -67,3 +67,6 @@ service vold vold_HYBRIS_DISABLED
 service wificond wificond_HYBRIS_DISABLED
     disabled
     override
+service vendor.hvdcp_opti /system/vendor/bin/hvdcp_opti_HYBRIS_DISABLED
+    disabled
+    override
