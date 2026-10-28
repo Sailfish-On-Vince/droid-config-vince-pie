@@ -70,3 +70,10 @@ service wificond wificond_HYBRIS_DISABLED
 service vendor.hvdcp_opti /system/vendor/bin/hvdcp_opti_HYBRIS_DISABLED
     disabled
     override
+
+# Sailfish keeps fingerprint metadata outside Android settings_fingerprint.xml.
+# The vendor cleanup script treats that missing XML as permission to erase
+# /mnt/vendor/persist/data/finger_*, deleting enrolled templates each boot.
+service goodix_script /vendor/bin/init.goodix.sh_HYBRIS_DISABLED
+    disabled
+    override
