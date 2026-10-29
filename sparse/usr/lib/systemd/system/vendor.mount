@@ -1,0 +1,21 @@
+[Unit]
+Description=Droid mount for /vendor
+Before=local-fs.target systemd-modules-load.service
+
+[Mount]
+What=/dev/mmcblk0p49
+Where=/vendor
+Type=ext4
+Options=ro
+# Options had SELinux context option:  
+
+# Default is 90 which makes mount period too long in case of
+# errors so drop it down a notch.
+TimeoutSec=10
+
+[Install]
+WantedBy=local-fs.target
+
+# From ./out/target/product/vince/vendor/etc/fstab.qcom :
+# /dev/mmcblk0p49		/vendor			ext4	ro								wait,recoveryonly
+
